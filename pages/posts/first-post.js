@@ -1,37 +1,21 @@
-import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
 
 const firstPost = () => {
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>first post</title>
-        </Head>
-        <Image
-          src='/images/profile.jpg'
-          height={144}
-          width={144}
-          alt='Galen Davis'
-        />
-        <h1 className='tag'>First Post</h1>
-        <Link href='/' >
-          <a>Back Home</a>
+    <Layout>
+      <Head>
+        <title>First Post</title>
+      </Head>
+      <h1>First Post</h1>
+      <h2>
+        <Link href="/">
+          <a>Back to home</a>
         </Link>
-
-        {/* <style jsx>{`
-
-        .tag {
-            background: red;
-            color: white;
-        }
-      `}</style> */}
-
-      </Layout>
-    </>
+      </h2>
+    </Layout>
   );
 };
 
